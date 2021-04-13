@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fieldset과 legend 태그</title>
+<style type="text/css">
+ul {
+	list-style: none; /* 앞에 점이 없어짐 */	
+}
+
+li {
+	margin: 20px;
+}
+
+li label {
+	width: 80px;
+	float: left;
+}
+
+fieldset {
+	margin: 15px;
+}
+</style>
+</head>
+<body>
+	<form>
+		<fieldset> <!-- 묶은요소들 주변에 박스 모양으로 선을 그려줌 -->
+			<legend>개인 정보</legend> <!-- 필드셋 요소의 캡션(caption)을 정의 가능, 즉 블록의 이름을 정할수있음 -->
+			<ul>
+				<!-- for와 id의 이름이 같아야 이름을 눌렀을때 이름칸의 블록에 자동으로 커서가깜빡거림 -->
+				<li><label for="name">이름</label> <input type="text" id="name">
+				</li>
+				<li><label for="mail">메일주소</label> <input type="text" id="mail">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>로그인 정보</legend>
+			<ul>
+				<li><label for="id">ID</label> <input type="text" id="id">
+				</li>
+				<li><label for="pwd">PassWord</label> <input type="text"
+					id="pwd"></li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
